@@ -5,16 +5,20 @@ body {
 .container img{
     max-width:200px;
     max-height: 100px;
-    width:auto;
-    height: auto;
-}
+    width:40%;
+    height:40%;
 
+}
 .h1 {
-    color:blue;
+    color:rgb(236, 236, 241);
 }
 
 .h2 {
 
     color:rgb(31, 29, 29);
     
+}
+footer{
+    background-color:#191717;
+    color:antiquewhite;
 }
