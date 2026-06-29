@@ -24,7 +24,7 @@
 
             main {
                 background-color: #ffe600;
-                color: #081e35e6;
+                color: #0038d3e6;
                 display: flex;
             }
 
@@ -50,11 +50,21 @@ font-weight: bold;
     </main>
     <script>
         const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
 </script>
 </body>
 </html>
